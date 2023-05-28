@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title>PA#1</title>
+<style>
+    body {
+        background-color: #EEEEEE;
+    }
+</style>
+
+<script src="./Utils/trackball-rotator.js"></script>
+<script src="./Utils/m4.js"></script>
+<script src="./shader.gpu"></script>
+<script src="./main.js"></script>
+
+</head>
+<body onload="init()">
+
+
+<div id="canvas-holder">
+   <canvas width="600" height="600" id="webglcanvas" style="background-color:red"></canvas>
+</div>
+
+<span>10</span><input value="80" type="range" name="eye separation" id="_es" min="10" max="100" step="5"><span>100</span><br>
+<span>0.1</span><input value="0.8" type="range" name="field of view" id="_fov" min="0.1" max="1.5" step="0.1"><span>1.5</span><br>
+<span>0</span><input value="6" type="range" name="near clipping distance" id="_ncd" min="0" max="20" step="1"><span>20</span><br>
+<span>100</span><input value="2000" type="range" name="convergence" id="_c" min="100" max="3000" step="50"><span>3000</span><br>
+
+</body></html>
